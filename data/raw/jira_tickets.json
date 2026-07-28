@@ -1,0 +1,34 @@
+[
+  {
+    "id": "jira-001",
+    "source_type": "jira",
+    "author": "DevOps Team",
+    "timestamp": "2023-03-21T11:00:00Z",
+    "raw_text": "JIRA-884: Standardize the platform on GCP and retire the AWS-only deployment path by Q4.",
+    "project": "platform-migration"
+  },
+  {
+    "id": "jira-002",
+    "source_type": "jira",
+    "author": "Security Team",
+    "timestamp": "2023-04-02T09:00:00Z",
+    "raw_text": "JIRA-901: Validate IAM parity before proceeding with the migration from AWS to GCP.",
+    "project": "platform-migration"
+  },
+  {
+    "id": "jira-003",
+    "source_type": "jira",
+    "author": "Platform Team",
+    "timestamp": "2023-05-15T13:30:00Z",
+    "raw_text": "JIRA-936: Confirm Kubernetes portability is preserved after the move to GCP.",
+    "project": "platform-migration"
+  },
+  {
+    "id": "jira-004",
+    "source_type": "jira",
+    "author": "Engineering Leadership",
+    "timestamp": "2023-06-01T16:45:00Z",
+    "raw_text": "JIRA-952: Approve phased migration to GCP and assign owners for the cutover window.",
+    "project": "platform-migration"
+  }
+]

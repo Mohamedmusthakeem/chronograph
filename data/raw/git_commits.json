@@ -1,0 +1,42 @@
+[
+  {
+    "id": "git-001",
+    "source_type": "git",
+    "author": "Omar Ruiz",
+    "timestamp": "2023-03-18T12:30:00Z",
+    "raw_text": "commit 8f3b9ce: add GCP regional observability and Kubernetes-ready deployment manifests.",
+    "repo": "platform-services"
+  },
+  {
+    "id": "git-002",
+    "source_type": "git",
+    "author": "Leo Kim",
+    "timestamp": "2023-04-19T08:50:00Z",
+    "raw_text": "commit 918e2af: migrate analytics ingestion workers to GCP managed Pub/Sub.",
+    "repo": "analytics"
+  },
+  {
+    "id": "git-003",
+    "source_type": "git",
+    "author": "Omar Ruiz",
+    "timestamp": "2023-05-24T10:25:00Z",
+    "raw_text": "commit 1ba04bb: replace AWS-specific IAM assumptions with portable workload identity settings.",
+    "repo": "platform-services"
+  },
+  {
+    "id": "git-004",
+    "source_type": "git",
+    "author": "Sarah Chen",
+    "timestamp": "2023-06-20T18:10:00Z",
+    "raw_text": "commit 44d1b92: rehost core services onto GCP and keep the deployment path compatible with Kubernetes.",
+    "repo": "core-api"
+  },
+  {
+    "id": "git-005",
+    "source_type": "git",
+    "author": "Mina Patel",
+    "timestamp": "2023-07-18T12:30:00Z",
+    "raw_text": "commit a3b72c4: finalize migration to GCP and remove legacy AWS-only deployment hooks.",
+    "repo": "core-api"
+  }
+]

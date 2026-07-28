@@ -1,0 +1,256 @@
+{
+  "entities": [
+    {
+      "name": "Omar Ruiz",
+      "type": "Person"
+    },
+    {
+      "name": "Nadia Brooks",
+      "type": "Person"
+    },
+    {
+      "name": "Leo Kim",
+      "type": "Person"
+    },
+    {
+      "name": "Sarah Chen",
+      "type": "Person"
+    },
+    {
+      "name": "Mina Patel",
+      "type": "Person"
+    },
+    {
+      "name": "AWS",
+      "type": "Technology"
+    },
+    {
+      "name": "GCP",
+      "type": "Technology"
+    },
+    {
+      "name": "Kubernetes",
+      "type": "Technology"
+    },
+    {
+      "name": "IAM",
+      "type": "Technology"
+    },
+    {
+      "name": "Pub/Sub",
+      "type": "Technology"
+    },
+    {
+      "name": "Move to GCP",
+      "type": "Decision"
+    },
+    {
+      "name": "Staged migration",
+      "type": "Decision"
+    }
+  ],
+  "relations": [
+    {
+      "source": "Sarah Chen",
+      "relation": "ADVOCATED_FOR",
+      "target": "GCP",
+      "timestamp": "2023-01-12T09:00:00Z",
+      "confidence": 0.95,
+      "source_ref": "slack-001"
+    },
+    {
+      "source": "Mina Patel",
+      "relation": "APPROVED",
+      "target": "Move to GCP",
+      "timestamp": "2023-05-12T09:05:00Z",
+      "confidence": 0.92,
+      "source_ref": "slack-007"
+    },
+    {
+      "source": "Omar Ruiz",
+      "relation": "COMMITTED_CODE",
+      "target": "GCP",
+      "timestamp": "2023-03-18T12:30:00Z",
+      "confidence": 0.9,
+      "source_ref": "git-001"
+    },
+    {
+      "source": "Sarah Chen",
+      "relation": "RAISED_CONCERN",
+      "target": "IAM",
+      "timestamp": "2023-04-02T08:45:00Z",
+      "confidence": 0.88,
+      "source_ref": "slack-005"
+    },
+    {
+      "source": "AWS",
+      "relation": "REPLACED_BY",
+      "target": "GCP",
+      "timestamp": "2023-08-03T09:20:00Z",
+      "confidence": 0.94,
+      "source_ref": "jira-001"
+    },
+    {
+      "source": "Kubernetes",
+      "relation": "COMMITTED_CODE",
+      "target": "GCP",
+      "timestamp": "2023-04-19T08:50:00Z",
+      "confidence": 0.86,
+      "source_ref": "git-002"
+    }
+  ],
+  "records": [
+    {
+      "id": "slack-001",
+      "source_type": "slack",
+      "author": "Sarah Chen",
+      "timestamp": "2023-01-12T09:00:00Z",
+      "raw_text": "The AWS networking layer is causing regional failover issues and I think the GCP managed networking story is more resilient.",
+      "channel": "engineering"
+    },
+    {
+      "id": "slack-002",
+      "source_type": "slack",
+      "author": "Mina Patel",
+      "timestamp": "2023-02-14T11:15:00Z",
+      "raw_text": "We need to revisit our cloud architecture because monthly AWS spend is climbing faster than expected.",
+      "channel": "architecture"
+    },
+    {
+      "id": "slack-003",
+      "source_type": "slack",
+      "author": "Omar Ruiz",
+      "timestamp": "2023-03-10T14:30:00Z",
+      "raw_text": "Latency tests against GCP are promising, especially for our analytics ingestion path.",
+      "channel": "platform"
+    },
+    {
+      "id": "slack-004",
+      "source_type": "slack",
+      "author": "Sarah Chen",
+      "timestamp": "2023-03-21T10:10:00Z",
+      "raw_text": "We should avoid vendor lock-in and keep the Kubernetes platform portable, so GCP is becoming the better fit.",
+      "channel": "engineering"
+    },
+    {
+      "id": "slack-005",
+      "source_type": "slack",
+      "author": "Nadia Brooks",
+      "timestamp": "2023-04-02T08:45:00Z",
+      "raw_text": "I raised concerns about the migration because the IAM model is not yet fully mapped between AWS and GCP.",
+      "channel": "security"
+    },
+    {
+      "id": "slack-006",
+      "source_type": "slack",
+      "author": "Leo Kim",
+      "timestamp": "2023-04-17T15:20:00Z",
+      "raw_text": "The Kubernetes support story on GCP looks stronger than AWS for our new workload patterns.",
+      "channel": "platform"
+    },
+    {
+      "id": "slack-007",
+      "source_type": "slack",
+      "author": "Mina Patel",
+      "timestamp": "2023-05-12T09:05:00Z",
+      "raw_text": "Leadership review: approved the staged migration to GCP after architecture review and risk mitigation planning.",
+      "channel": "leadership"
+    },
+    {
+      "id": "slack-008",
+      "source_type": "slack",
+      "author": "Omar Ruiz",
+      "timestamp": "2023-06-18T13:40:00Z",
+      "raw_text": "We are now committing the first set of manifests for the rehosted workloads on GCP.",
+      "channel": "deployments"
+    },
+    {
+      "id": "slack-009",
+      "source_type": "slack",
+      "author": "Sarah Chen",
+      "timestamp": "2023-07-11T16:00:00Z",
+      "raw_text": "The migration is progressing well and the observability tooling is finally consistent across environments.",
+      "channel": "engineering"
+    },
+    {
+      "id": "slack-010",
+      "source_type": "slack",
+      "author": "Nadia Brooks",
+      "timestamp": "2023-08-03T09:20:00Z",
+      "raw_text": "The security review is complete and we can retire the AWS-only deployment path.",
+      "channel": "security"
+    },
+    {
+      "id": "git-001",
+      "source_type": "git",
+      "author": "Omar Ruiz",
+      "timestamp": "2023-03-18T12:30:00Z",
+      "raw_text": "commit 8f3b9ce: add GCP regional observability and Kubernetes-ready deployment manifests.",
+      "repo": "platform-services"
+    },
+    {
+      "id": "git-002",
+      "source_type": "git",
+      "author": "Leo Kim",
+      "timestamp": "2023-04-19T08:50:00Z",
+      "raw_text": "commit 918e2af: migrate analytics ingestion workers to GCP managed Pub/Sub.",
+      "repo": "analytics"
+    },
+    {
+      "id": "git-003",
+      "source_type": "git",
+      "author": "Omar Ruiz",
+      "timestamp": "2023-05-24T10:25:00Z",
+      "raw_text": "commit 1ba04bb: replace AWS-specific IAM assumptions with portable workload identity settings.",
+      "repo": "platform-services"
+    },
+    {
+      "id": "git-004",
+      "source_type": "git",
+      "author": "Sarah Chen",
+      "timestamp": "2023-06-20T18:10:00Z",
+      "raw_text": "commit 44d1b92: rehost core services onto GCP and keep the deployment path compatible with Kubernetes.",
+      "repo": "core-api"
+    },
+    {
+      "id": "git-005",
+      "source_type": "git",
+      "author": "Mina Patel",
+      "timestamp": "2023-07-18T12:30:00Z",
+      "raw_text": "commit a3b72c4: finalize migration to GCP and remove legacy AWS-only deployment hooks.",
+      "repo": "core-api"
+    },
+    {
+      "id": "jira-001",
+      "source_type": "jira",
+      "author": "DevOps Team",
+      "timestamp": "2023-03-21T11:00:00Z",
+      "raw_text": "JIRA-884: Standardize the platform on GCP and retire the AWS-only deployment path by Q4.",
+      "project": "platform-migration"
+    },
+    {
+      "id": "jira-002",
+      "source_type": "jira",
+      "author": "Security Team",
+      "timestamp": "2023-04-02T09:00:00Z",
+      "raw_text": "JIRA-901: Validate IAM parity before proceeding with the migration from AWS to GCP.",
+      "project": "platform-migration"
+    },
+    {
+      "id": "jira-003",
+      "source_type": "jira",
+      "author": "Platform Team",
+      "timestamp": "2023-05-15T13:30:00Z",
+      "raw_text": "JIRA-936: Confirm Kubernetes portability is preserved after the move to GCP.",
+      "project": "platform-migration"
+    },
+    {
+      "id": "jira-004",
+      "source_type": "jira",
+      "author": "Engineering Leadership",
+      "timestamp": "2023-06-01T16:45:00Z",
+      "raw_text": "JIRA-952: Approve phased migration to GCP and assign owners for the cutover window.",
+      "project": "platform-migration"
+    }
+  ]
+}

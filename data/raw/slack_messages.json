@@ -1,0 +1,82 @@
+[
+  {
+    "id": "slack-001",
+    "source_type": "slack",
+    "author": "Sarah Chen",
+    "timestamp": "2023-01-12T09:00:00Z",
+    "raw_text": "The AWS networking layer is causing regional failover issues and I think the GCP managed networking story is more resilient.",
+    "channel": "engineering"
+  },
+  {
+    "id": "slack-002",
+    "source_type": "slack",
+    "author": "Mina Patel",
+    "timestamp": "2023-02-14T11:15:00Z",
+    "raw_text": "We need to revisit our cloud architecture because monthly AWS spend is climbing faster than expected.",
+    "channel": "architecture"
+  },
+  {
+    "id": "slack-003",
+    "source_type": "slack",
+    "author": "Omar Ruiz",
+    "timestamp": "2023-03-10T14:30:00Z",
+    "raw_text": "Latency tests against GCP are promising, especially for our analytics ingestion path.",
+    "channel": "platform"
+  },
+  {
+    "id": "slack-004",
+    "source_type": "slack",
+    "author": "Sarah Chen",
+    "timestamp": "2023-03-21T10:10:00Z",
+    "raw_text": "We should avoid vendor lock-in and keep the Kubernetes platform portable, so GCP is becoming the better fit.",
+    "channel": "engineering"
+  },
+  {
+    "id": "slack-005",
+    "source_type": "slack",
+    "author": "Nadia Brooks",
+    "timestamp": "2023-04-02T08:45:00Z",
+    "raw_text": "I raised concerns about the migration because the IAM model is not yet fully mapped between AWS and GCP.",
+    "channel": "security"
+  },
+  {
+    "id": "slack-006",
+    "source_type": "slack",
+    "author": "Leo Kim",
+    "timestamp": "2023-04-17T15:20:00Z",
+    "raw_text": "The Kubernetes support story on GCP looks stronger than AWS for our new workload patterns.",
+    "channel": "platform"
+  },
+  {
+    "id": "slack-007",
+    "source_type": "slack",
+    "author": "Mina Patel",
+    "timestamp": "2023-05-12T09:05:00Z",
+    "raw_text": "Leadership review: approved the staged migration to GCP after architecture review and risk mitigation planning.",
+    "channel": "leadership"
+  },
+  {
+    "id": "slack-008",
+    "source_type": "slack",
+    "author": "Omar Ruiz",
+    "timestamp": "2023-06-18T13:40:00Z",
+    "raw_text": "We are now committing the first set of manifests for the rehosted workloads on GCP.",
+    "channel": "deployments"
+  },
+  {
+    "id": "slack-009",
+    "source_type": "slack",
+    "author": "Sarah Chen",
+    "timestamp": "2023-07-11T16:00:00Z",
+    "raw_text": "The migration is progressing well and the observability tooling is finally consistent across environments.",
+    "channel": "engineering"
+  },
+  {
+    "id": "slack-010",
+    "source_type": "slack",
+    "author": "Nadia Brooks",
+    "timestamp": "2023-08-03T09:20:00Z",
+    "raw_text": "The security review is complete and we can retire the AWS-only deployment path.",
+    "channel": "security"
+  }
+]
